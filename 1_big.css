@@ -1,0 +1,45 @@
+html,body{
+    margin:0;
+}
+div{display: inline-block; text-align: center;}
+
+#div1{
+    height: 20vh;
+    width: 100%;
+    background-color: skyblue;
+}
+#div2{
+    height: 80vh;
+    width: 20%;
+    background-color: aliceblue;
+    float: left;
+}
+#div3{
+    height: 30vh;
+    width: 40%;
+    background-color: palevioletred;
+    float: left;
+}
+#div4{
+    height: 30vh;
+    width: 40%;
+    background-color: darkgrey;
+    float: left;
+}
+#div5{
+    height: 30vh;
+    width: 40%;
+    background-color: cornsilk;
+    float: left;
+}
+#div6{
+    height: 30vh;
+    width: 40%;
+    background-color: bisque; 
+    float: left;
+}
+#div7{
+    height: 20vh;
+    width: 80%;
+    background-color: darksalmon;
+}

@@ -1,0 +1,36 @@
+html, body{margin: 0;}
+div{text-align: center;
+   height: calc(100vh/6);
+  
+   } 
+
+#div1{
+    background-color: skyblue;
+}
+
+#div2{
+    display: none;    
+}
+
+#div3{ 
+    width: 100%;
+    background-color: palevioletred;
+}
+#div4{
+ width: 100%;
+    background-color:darkgrey
+}
+#div5{ 
+ width: 100%;
+    
+    background-color: cornsilk; 
+}
+#div6{ 
+     width: 100%;
+    background-color: bisque; 
+    
+}
+#div7{ 
+    
+    background-color: darksalmon;     
+}
