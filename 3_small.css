@@ -1,36 +1,17 @@
 html, body, h1{margin: 0;}
-div{text-align: center;
-   height: calc(100vh/6);
-  
-   } 
-
-#div1{
-    background-color: skyblue;
-}
 
 #div2{
-    display: none;    
+    display: none; 
+    height: 300vh;
 }
-
-#div3{ 
-    width: 100%;
-    background-color: palevioletred;
+#contents{
+    width: 100vw;
 }
-#div4{
- width: 100%;
-    background-color:darkgrey;
+#contents .photo{
+    width: 100vw;
+    height: 50vh;
 }
-#div5{ 
- width: 100%;
-    
-    background-color: cornsilk; 
-}
-#div6{ 
-     width: 100%;
-    background-color: bisque; 
-    
-}
-#div7{ 
-    
-    background-color: darkgrey;     
+#footer{ 
+    position: relative;
+    top: 195vh;
 }

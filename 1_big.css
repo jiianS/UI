@@ -1,43 +1,104 @@
 html,body, h1{ margin:0;}
+
 div{display: inline-block; text-align: center;}
 
-#div1{
-    height: 20vh;
+#main{
+    height: 15vh;
     width: 100%;
-    background-color: skyblue;
+    background-color: lightpink;
+    background-position: center;
+    position: fixed;
+    z-index: 4;
+}
+.logo{
+    background-image:url(img/ic_airplanemode_active_black_24px.svg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    transform: translateY(20px);
+}
+#main h1{
+    transform: translateY(5px);
+    font-size: 3em;
+}
+#search{
+    background-size: cover;
+    width: 40px;
+    height: 50px;
+    background-image: url(img/ic_search_black_24px.svg);
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    transform: translateY(20px)
+}
+#search:hover{
+    background-color: gainsboro;
+    cursor: pointer;
 }
 #div2{
-    height: 80vh;
-    width: 20%;
-    background-color: aliceblue;
+    height: 180vh;
+    width: 20vw;
+    background-color: skyblue;
+    float: left;
+    background-position: center;
+    position: relative;
+    top: 15vh; 
+    font-size: 1.3em;
+    
+}
+.div22:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.div22{
+    color: white;
+    font-weight: bold;
+    transform: translateX(-15px)
+}
+#contents{
+    width: calc(100% - 20vw);
+    height: 120vh;
+    float: left;
+    position: relative;
+    top: 15vh;
+
+}
+.text{ 
+    color: white;    
+    position: relative;
+    top:70%;
+}
+.photo{
+    height: 50%;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
     float: left;
 }
-#div3{
-    height: 30vh;
-    width: 40%;
-    background-color: palevioletred;
-    float: left;
+.div3{
+    background-image: url(img/%EB%9F%B0%EB%8D%98.png);
 }
-#div4{
-    height: 30vh;
-    width: 40%;
+.div4{
+    background-image: url(img/%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98.png);   
+}
+.div5{
+   background-image: url(img/%ED%8C%8C%EB%A6%AC.png);
+}
+.div6{
+    background-image: url(img/%ED%94%84%EB%9D%BC%ED%95%98.png);
+}
+.div7{
+    background-image: url(img/%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84.jpg);
+}
+.div8{
+    background-image: url(img/%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88.jpg);
+}
+
+#footer{
+    width: 100%;
     background-color: darkgrey;
-    float: left;
-}
-#div5{
-    height: 30vh;
-    width: 40%;
-    background-color: cornsilk;
-    float: left;
-}
-#div6{
-    height: 30vh;
-    width: 40%;
-    background-color: bisque; 
-    float: left;
-}
-#div7{
-    height: 20vh;
-    width: 80%;
-    background-color: darkgrey;
+    text-align: center;
+    position:relative;
+    top: 15vh;
 }
