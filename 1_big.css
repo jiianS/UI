@@ -10,6 +10,30 @@ div{display: inline-block; text-align: center;}
     position: fixed;
     z-index: 4;
 }
+
+.page-main{
+    height: 180vh;
+    width: 20vw;
+    background-color: skyblue;
+    float: left;
+    background-position: center;
+    position: relative;
+    top: 15vh; 
+    font-size: 1.3em;
+}
+.page-main > aside ul{
+    list-style: none;
+    
+}
+.page-main > aside li{
+    margin: 0 0 20px;
+
+}
+
+button{
+    display: none;
+}
+
 .logo{
     background-image:url(img/ic_airplanemode_active_black_24px.svg);
     width: 70px;
@@ -62,7 +86,8 @@ div{display: inline-block; text-align: center;}
     float: left;
     position: relative;
     top: 15vh;
-
+    transform: translateY(-15vh);
+    cursor: pointer;
 }
 .text{ 
     color: white;    
@@ -75,6 +100,8 @@ div{display: inline-block; text-align: center;}
     background-position: center;
     background-size: cover;
     float: left;
+    transform: translateY(15vh);
+
 }
 .div3{
     background-image: url(img/%EB%9F%B0%EB%8D%98.png);
@@ -100,5 +127,15 @@ div{display: inline-block; text-align: center;}
     background-color: darkgrey;
     text-align: center;
     position:relative;
-    top: 15vh;
+    transform: translateY(15vh);
+
 }
+.submenu {
+    color: white;
+    list-style-type: none;
+    font-size: 0.7em;
+}
+button:hover{
+    cursor: pointer;
+}
+

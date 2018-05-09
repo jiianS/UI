@@ -4,30 +4,81 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title> 매덩여행 </title>
-    
    <link rel="stylesheet" type="text/css" href="1_big.css">
    <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 900px)" href="2_middle.css">
     <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 600px)" href="3_small.css">
-
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./vendor/jquery-1.10.2.min.js"></script>
+    <script src="./vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./main.js"></script>
+    </head>
+    
 <body>
     <div id="main">
         <div class=logo></div>
         <div><h1>매덩여행</h1></div>
         <div id=search></div>
     </div>
-    <div id="div2">
-        <ul class="div2_1 div22">유럽</ul>
-        <ul class="div2_2 div22">아시아</ul>
-        <ul class="div2_3 div22">아프리카</ul>
-        <ul class="div2_4 div22">아메리카</ul>
-        <ul class="div2_4 div22">오세아니아</ul>         
+    <div class="page-main">
+        <aside>
+            <ul>
+                <li class="div22"><span class="moreEurope">유럽</span><li>
+                <ul id = "regionEurope" style="display: none" class="submenu">
+                    <li>- 영국</li>  
+                    <li>- 독일</li></ul>
+                <li class="div22"><span class="moreAsia">아시아</span></li>
+                <ul id = "regionAsia" style="display: none" class="submenu">
+                    <li>- 한국</li>  
+                    <li>- 일본</li></ul>
+                <li class="div22"><span class="moreAfria">아프리카</span></li>
+                <ul id = "regionAfria" style="display: none" class="submenu">
+                    <li>- 남아공</li>  
+                    <li>- 케냐</li></ul>
+                <li class="div22"><span class="moreAmerica">아메리카</span></li>
+                <ul id = "regionAmerica" style="display: none" class="submenu" >
+                    <li>- 미국</li>  
+                    <li>- 캐나다</li></ul>
+                <li class="div22"><span class="moreOceania">오세아니아</span></li>
+                <ul id = "regionOceania" style="display: none" class="submenu">
+                    <li>- 뉴질랜드</li>  
+                    <li>- 호주</li></ul></ul>
+            <button id="button"><img src="img/btn_open.png"></button>
+        </aside>
     </div>
+    
+    <!--<div id="div2">
+        <ul class="div2_1 div22"><span class="moreEurope">유럽</span></ul>
+        <ul id = "regionEurope" style="display: none" class="submenu">
+            <li>영국</li>  
+            <li>독일</li>
+        </ul>
+        <ul class="div2_2 div22"><span class="moreAsia">아시아</span></ul>
+        <ul id = "regionAsia" style="display: none" class="submenu">
+            <li>한국</li>  
+            <li>일본</li>
+        </ul>
+        <ul class="div2_3 div22"><span class="moreAfria">아프리카</span></ul>
+        <ul id = "regionAfria" style="display: none" class="submenu">
+            <li>남아공</li>  
+            <li>케냐</li>
+        </ul>
+        <ul class="div2_4 div22"><span class="moreAmerica">아메리카</span></ul>
+        <ul id = "regionAmerica" style="display: none" class="submenu" >
+            <li>미국</li>  
+            <li>캐나다</li>
+        </ul>
+        <ul class="div2_4 div22"><span class="moreOceania">오세아니아</span></ul>
+        <ul id = "regionOceania" style="display: none" class="submenu">
+            <li>뉴질랜드</li>  
+            <li>호주</li>
+        </ul>         
+    </div>-->
+
     <div id="contents">
-        <div class="div3 photo">
+        <div class="div3 photo" onclick="location.href='london.html'">
             <h2 class="text">런던</h2>
         </div>
-        <div class="div4 photo">
+        <div class="div4 photo" onclick="location.href='Barcelona.html'">
             <h2 class="text">바르셀로나</h2>
         </div>
         <div class="div5 photo">

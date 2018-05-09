@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+}
+
+#main{
+    height: 15vh;
+    width: 100%;
+    background-color: lightpink;
+    background-position: center;
+    position: fixed;
+    z-index: 4;
+    clear: both;
+    margin: 0;
+    display: inline-block; 
+    text-align: center;
+    transform: translateY(-6.7vh);
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+}
+.logo{
+    background-image:url(img/ic_airplanemode_active_black_24px.svg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    transform: translateY(20px);
+    text-align: center;
+    display: block;
+    font-size: 3em;
+}
+#main h1{
+    font-size: 1.2em;
+    display: inline-block;
+    transform: translateY(-13vh);
+
+}
+#search{
+    background-size: cover;
+    width: 40px;
+    height: 50px;
+    background-image: url(img/ic_search_black_24px.svg);
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    display: block;
+    transform: translateY(-7vh);
+}
+#search:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+       
+section{
+    transform: translateY(8vh);
+    height: 280px;
+    clear: both;
+}
+
+section h1{ 
+    font-size: 3em; 
+    text-align: center;
+    padding: 20px;
+    color: grey
+}
+
+#nav1{
+    width: 100vw;
+    height: 50px;
+    clear: both;
+}
+
+#nav1 a{
+    float: inherit;
+    display: inline-block;   
+    padding: 5px 10px;    
+    font-size: 20px;
+    text-decoration: none;
+    transform: translateY(50%);
+
+}
+
+nav #nav1 a:hover{
+    color: black;
+    cursor: pointer; 
+}
+
+.columns{
+    padding: 10px 20px ;
+    display: inline-block;
+    clear: both;
+}
+
+.columns h2{
+    font-size:3em;
+    
+}
+
+
+.box{
+    display: inline-block;
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    float: left;
+    padding: 10px 30px;
+}
+
+
+
+.c_photo{
+    float: left;
+    padding-top: 60px;
+    display: inline-block;
+}
+
+.c_photo img{   
+    width: 500px;
+    height: 330px;
+}
+
+    
+.content{
+    padding:0 10px;
+    width: 60vw;
+    height: 500px;
+    clear: both;
+    display: inline-block;
+    float: left;
+}
+                        
+.content p{
+    font-size: 1em;
+    padding: 20px 0;    
+    
+}
+ 
+        
+        
