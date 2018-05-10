@@ -1,31 +1,40 @@
-section{
+#s_title{
     height: auto;
 }
 
-.box{
-    height:auto;
-    padding: 10px 20px;
+
+#s_title h1{ 
+    font-size: 2.5em; 
+    margin:10px 0;
+}
+
+#nav1 a{
+    display: inline-block;   
+    padding: 10px;    
+    transform: translateY(60%);    
 }
 
 
-.c_photo img{   
-    width: 600px;
-    height: 400px;    
+#s_content{
+    font-size:1.15em;    
 }
 
-    
-.content{
-    width: 90vw;
-    height: auto;
-    float: inherit;
+article{
+    padding: 0 15px;
 }
                         
 .content p{
+    width: 80%;
     font-size: 13px;
-    padding: 20px 0;    
-    
+    padding-top: 20px;    
 }
-        
+
+.c_photo{
+    float: left;
+    display: inline-block;
+    padding-left: 40px;
+}
+
         
 #nav1 a{
     padding: 10px;    

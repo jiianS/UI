@@ -1,71 +1,60 @@
-html,body{
-    margin: 0;
+html,body{ margin: 0; }
+
+/*header - css*/
+header{
+    width: 100%;
+    padding-top: 10px;
+    height: 20vh;
+    background-color: lightpink;
+    text-align: center;
+
 }
 
-#main{
-    height: 15vh;
-    width: 100%;
-    background-color: lightpink;
-    background-position: center;
-    position: fixed;
-    z-index: 4;
-    clear: both;
-    margin: 0;
-    display: inline-block; 
-    text-align: center;
-    transform: translateY(-6.7vh);
-    font-size: 3em;
-    font-weight: bolder;
-    text-align: center;
+header h1{ 
+    display: inline-block; font-size: 3.5em;
 }
+
 .logo{
     background-image:url(img/ic_airplanemode_active_black_24px.svg);
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     background-size: cover;
     transform: translateY(20px);
-    text-align: center;
-    display: block;
-    font-size: 3em;
+    display: inline-block;    
 }
-#main h1{
-    font-size: 1.2em;
-    display: inline-block;
-    transform: translateY(-13vh);
 
-}
 #search{
     background-size: cover;
-    width: 40px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-image: url(img/ic_search_black_24px.svg);
     float: right;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    display: block;
-    transform: translateY(-7vh);
+    
+    display: inline-block;
+    transform: translateX(-30%) translateY(50%);
 }
 #search:hover{
     background-color: gainsboro;
     cursor: pointer;
 }
-       
-section{
-    transform: translateY(8vh);
-    height: 280px;
-    clear: both;
+
+/* section1<여행지 목록> - css*/
+
+section{ width: 100%; clear: both; }
+
+#s_title{
+    height: auto;
 }
 
-section h1{ 
+#s_title h1{ 
     font-size: 3em; 
     text-align: center;
-    padding: 20px;
-    color: grey
+    color: grey;
+    margin:20px 0;
 }
 
 #nav1{
-    width: 100vw;
+    width: 100%;
     height: 50px;
     clear: both;
 }
@@ -74,66 +63,44 @@ section h1{
     float: inherit;
     display: inline-block;   
     padding: 5px 10px;    
-    font-size: 20px;
-    text-decoration: none;
-    transform: translateY(50%);
-
+    font-size: 15px;
+    transform: translateY(80%);    
 }
 
-nav #nav1 a:hover{
-    color: black;
-    cursor: pointer; 
+#nav1 a:hover{ cursor: pointer; }
+
+/* section2<여행지 리스트> - css*/
+#s_content{
+    font-size:1.3em;    
 }
 
-.columns{
-    padding: 10px 20px ;
-    display: inline-block;
+article{
+    width:95%;
     clear: both;
-}
-
-.columns h2{
-    font-size:3em;
-    
-}
-
-
-.box{
-    display: inline-block;
-    width: 100vw;
-    height: 500px;
-    position: relative;
     float: left;
-    padding: 10px 30px;
+    padding: 0 30px;
 }
-
-
-
+                        
+.content p{
+    width: 50%;
+    height: 300px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px 0;    
+    float: left;
+}
+ 
 .c_photo{
-    float: left;
-    padding-top: 60px;
+    float: right;
     display: inline-block;
+    padding-left: 40px;
 }
+
 
 .c_photo img{   
-    width: 500px;
+    width: 450px;
     height: 330px;
 }
 
     
-.content{
-    padding:0 10px;
-    width: 60vw;
-    height: 500px;
-    clear: both;
-    display: inline-block;
-    float: left;
-}
-                        
-.content p{
-    font-size: 1em;
-    padding: 20px 0;    
-    
-}
- 
-        
         
