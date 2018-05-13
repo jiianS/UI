@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> BOARD - DL </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="table.css" />
+<script src="./main.js"></script>
+
+</head> 
+
+<body> 
+    
+
+<div class="wrap">
+	<div class="container"> 
+		<div id="content">
+			<h2>게시판</h2>
+			<div class="bbs">
+					<div class="thead">
+
+						<dl>
+							<dt scope="col" class="cel01">번호</dt>
+							<dt scope="col" class="cel02">제목</dt>
+							<dt scope="col" class="cel04">작성일</dt>
+							<dt scope="col" class="cel05">조회수</dt>
+						</dl>
+					</div>
+                       
+					<div class="tbody">
+
+						<dl>
+							<dd scope="row" class="cel01">1</dd>
+							<dd class="cel02"><a href="#">제목</a></dd>
+							<dd class="cel04">2018-05-08</dd>
+							<dd class="cel05">5</dd>
+						</dl>
+						<dl>
+							<dd scope="row" class="cel01">2</dd>
+							<dd class="cel02"><a href="#">게시판 제목</a></dd>
+							<dd class="cel04">2018-05-10</dd>
+							<dd class="cel05">3</dd>
+						</dl>
+					</div>
+
+					<div class="tfoot"> <!-- 요기 페이지는 숫자 페이징 넣어요 -->
+						<dl>
+							<dd>
+								<div class="paging">
+									<a href="#" class="bbsBtn"><img src="img/page_first.gif" alt="첫 페이지로" /></a> 
+									<a href="#" class="bbsBtn"><img src="img/page_pre.gif" alt="이전 페이지로" /></a>
+									<a href="#" class="active">1</a> 
+									<a href="#">2</a> 
+									<a href="#">3</a> 
+									<a href="#" class="bbsBtn"><img src="img/page_next.gif" alt="다음 페이지로" /></a>
+									<a href="#" class="bbsBtn"><img src="img/page_end.gif" alt="마지막 페이지로" /></a>
+									</div>
+							</dd>
+						</dl>
+					</div>
+
+			</div> <!-- // bbs -->
+
+		</div> <!-- // content -->
+	</div> <!-- // container -->
+    
+</div> <!-- // wrap -->
+
+</body>
+</html>
+

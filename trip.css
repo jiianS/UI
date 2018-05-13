@@ -7,12 +7,9 @@ header{
     height: 20vh;
     background-color: lightpink;
     text-align: center;
-
 }
 
-header h1{ 
-    display: inline-block; font-size: 3.5em;
-}
+header h1{ display: inline-block; font-size: 3.5em; }
 
 .logo{
     background-image:url(img/ic_airplanemode_active_black_24px.svg);
@@ -28,8 +25,7 @@ header h1{
     width: 75px;
     height: 75px;
     background-image: url(img/ic_search_black_24px.svg);
-    float: right;
-    
+    float: right;    
     display: inline-block;
     transform: translateX(-30%) translateY(50%);
 }

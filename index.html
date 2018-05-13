@@ -14,90 +14,97 @@
     </head>
     
 <body>
-    <div id="main">
-        <div class=logo></div>
-        <div><h1>매덩여행</h1></div>
-        <div id=search></div>
-    </div>
-    <div class="page-main">
+ <!--기본에서 header 추가-->
+  <header>
+       <div id="main" onclick="location.href='index.html'">
+            <div class=logo></div>
+                <h1>매덩여행</h1>
+            <div id="search"  class="content"></div>
+        </div>
+        
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>검색어를 입력하세요.</p>
+        <form>
+            <input type="text" id="input_search">
+            <input type="submit" value="검색">
+        </form>
+        </div>
+      </div>
+   </header>
+    
+<!--section추가 , pagemain변경-->    
+    <section>
         <aside>
             <ul>
-                <li class="div22"><span class="moreEurope">유럽</span><li>
-                <ul id = "regionEurope" style="display: none" class="submenu">
-                    <li>- 영국</li>  
-                    <li>- 독일</li></ul>
+                <li class="div22">
+                    <span class="moreEurope">유럽</span>
+                <li>
+                    <ul id = "regionEurope" class="submenu">
+                        <li>- 오스트리아아일랜드</li>  
+                        <li>- 독일</li>
+                    </ul>
                 <li class="div22"><span class="moreAsia">아시아</span></li>
-                <ul id = "regionAsia" style="display: none" class="submenu">
-                    <li>- 한국</li>  
-                    <li>- 일본</li></ul>
+                    <ul id = "regionAsia" class="submenu">
+                        <li>- 한국</li>  
+                        <li>- 일본</li>
+                    </ul>
+                    
                 <li class="div22"><span class="moreAfria">아프리카</span></li>
-                <ul id = "regionAfria" style="display: none" class="submenu">
-                    <li>- 남아공</li>  
-                    <li>- 케냐</li></ul>
+                    <ul id = "regionAfria" class="submenu">
+                        <li>- 남아공</li>  
+                        <li>- 케냐</li>
+                    </ul>
                 <li class="div22"><span class="moreAmerica">아메리카</span></li>
-                <ul id = "regionAmerica" style="display: none" class="submenu" >
+                <ul id = "regionAmerica" class="submenu" >
                     <li>- 미국</li>  
                     <li>- 캐나다</li></ul>
                 <li class="div22"><span class="moreOceania">오세아니아</span></li>
-                <ul id = "regionOceania" style="display: none" class="submenu">
+                <ul id = "regionOceania" class="submenu">
                     <li>- 뉴질랜드</li>  
-                    <li>- 호주</li></ul></ul>
-            <button id="button"><img src="img/btn_open.png"></button>
-        </aside>
-    </div>
-    
-    <!--<div id="div2">
-        <ul class="div2_1 div22"><span class="moreEurope">유럽</span></ul>
-        <ul id = "regionEurope" style="display: none" class="submenu">
-            <li>영국</li>  
-            <li>독일</li>
-        </ul>
-        <ul class="div2_2 div22"><span class="moreAsia">아시아</span></ul>
-        <ul id = "regionAsia" style="display: none" class="submenu">
-            <li>한국</li>  
-            <li>일본</li>
-        </ul>
-        <ul class="div2_3 div22"><span class="moreAfria">아프리카</span></ul>
-        <ul id = "regionAfria" style="display: none" class="submenu">
-            <li>남아공</li>  
-            <li>케냐</li>
-        </ul>
-        <ul class="div2_4 div22"><span class="moreAmerica">아메리카</span></ul>
-        <ul id = "regionAmerica" style="display: none" class="submenu" >
-            <li>미국</li>  
-            <li>캐나다</li>
-        </ul>
-        <ul class="div2_4 div22"><span class="moreOceania">오세아니아</span></ul>
-        <ul id = "regionOceania" style="display: none" class="submenu">
-            <li>뉴질랜드</li>  
-            <li>호주</li>
-        </ul>         
-    </div>-->
+                    <li>- 호주</li>
+                </ul> 
 
-    <div id="contents">
-        <div class="div3 photo" onclick="location.href='london.html'">
+                    <li id="table" class="div22" >게시판</li>
+                </ul>
+
+                
+                <button id="button"><img src="img/btn_open.png"></button>
+        </aside>
+
+
+      <div id="contents">
+        <div id="trip1" class="photo">
             <h2 class="text">런던</h2>
         </div>
-        <div class="div4 photo" onclick="location.href='Barcelona.html'">
+        <div id="trip2" class="photo">
             <h2 class="text">바르셀로나</h2>
         </div>
-        <div class="div5 photo">
+        <div id = "trip3" class="photo">
             <h2 class="text">파리</h2>        
         </div>
-        <div class="div6 photo">
+        <div id ="trip4" class="photo">
             <h2 class="text">프라하</h2>
         </div>
-        <div class="div7 photo">
+        <div id ="trip5"class="photo">
             <h2 class="text">베네치아</h2>
         </div>
-        <div class="div8 photo">
+        <div id ="trip6"class="photo">
             <h2 class="text">산토리니</h2>
         </div>
     </div>
 
-    <div id="footer">
-        <h3>전 세계 최대 규모의 여행 사이트. 풍부한 정보. 현명한 예약. 즐거운 여행</h3>
-        <h5>copyrighter by 갱 and 지안 and 굥은</h5>
-    </div>
+</section>
+  
+   <footer>
+        <div>
+            <h4>전 세계 최대 규모의 여행 사이트. 풍부한 정보. 현명한 예약. 즐거운 여행</h4>
+            <h5>copyrighter by 갱 and 지안 and 굥은</h5> 
+        </div>
+    </footer>
+
 </body>
 </html>

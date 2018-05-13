@@ -1,141 +1,170 @@
-html,body, h1{ margin:0;}
+html,body { margin:0;}
 
 div{display: inline-block; text-align: center;}
 
-#main{
-    height: 15vh;
+/*header - css*/
+header{
     width: 100%;
+    padding: 10px 0;
+    height: 20vh;
     background-color: lightpink;
-    background-position: center;
-    position: fixed;
-    z-index: 4;
 }
 
-.page-main{
-    height: 180vh;
-    width: 20vw;
-    background-color: skyblue;
-    float: left;
-    background-position: center;
-    position: relative;
-    top: 15vh; 
-    font-size: 1.3em;
-}
-.page-main > aside ul{
-    list-style: none;
-    
-}
-.page-main > aside li{
-    margin: 0 0 20px;
-
-}
-
-button{
-    display: none;
+#main{width: 100%; height: 100%; display: inline-block;}
+#main h1{
+    display: inline-block; font-size: 3.5em; margin: 1
 }
 
 .logo{
     background-image:url(img/ic_airplanemode_active_black_24px.svg);
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     background-size: cover;
     transform: translateY(20px);
+    display: inline-block;    
 }
-#main h1{
-    transform: translateY(5px);
-    font-size: 3em;
-}
+
+.logo:hover{cursor: pointer;}
+
+/*검색 관련*/
 #search{
     background-size: cover;
-    width: 40px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-image: url(img/ic_search_black_24px.svg);
-    float: right;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    transform: translateY(20px)
+    float: right;    
+    display: inline-block;
+    transform: translateX(-30%) translateY(50%);
 }
+
 #search:hover{
     background-color: gainsboro;
     cursor: pointer;
 }
-#div2{
-    height: 180vh;
+
+/*검색창*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 화면 */
+section{ height: 70vh;}
+
+/*화면 줄였을때 나오는 화면*/
+button{display: none; }
+
+/*aside_nav*/
+aside{
+    height:70vh;
     width: 20vw;
-    background-color: skyblue;
+    background-color:lightskyblue;
     float: left;
     background-position: center;
     position: relative;
-    top: 15vh; 
     font-size: 1.3em;
-    
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.5em;
 }
-.div22:hover{
+
+aside ul{ 
+    list-style: none; padding-left: 10px;}
+aside li{ margin: 0 15px;}
+
+aside li:hover{
     cursor: pointer;
     text-decoration: underline;
 }
-.div22{
-    color: white;
-    font-weight: bold;
-    transform: translateX(-15px)
+.submenu {
+    width: auto;
+    list-style-type: none;
+    font-size: 0.8em;
+    height: auto;
+    display: none;
 }
+
+
+/*cotent*/
+
 #contents{
     width: calc(100% - 20vw);
-    height: 120vh;
+    height: 100%;
     float: left;
-    position: relative;
-    top: 15vh;
-    transform: translateY(-15vh);
-    cursor: pointer;
+    overflow-y: scroll; 
+    -ms-overflow-style: none;
 }
+
+
+
+
 .text{ 
     color: white;    
     position: relative;
-    top:70%;
+    top:80%;
 }
 .photo{
-    height: 50%;
+    height: 70%;
     width: 50%;
     background-position: center;
     background-size: cover;
     float: left;
-    transform: translateY(15vh);
-
-}
-.div3{
-    background-image: url(img/%EB%9F%B0%EB%8D%98.png);
-}
-.div4{
-    background-image: url(img/%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98.png);   
-}
-.div5{
-   background-image: url(img/%ED%8C%8C%EB%A6%AC.png);
-}
-.div6{
-    background-image: url(img/%ED%94%84%EB%9D%BC%ED%95%98.png);
-}
-.div7{
-    background-image: url(img/%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84.jpg);
-}
-.div8{
-    background-image: url(img/%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88.jpg);
 }
 
-#footer{
-    width: 100%;
-    background-color: darkgrey;
-    text-align: center;
-    position:relative;
-    transform: translateY(15vh);
+.photo:hover{cursor: pointer;}
 
+
+#trip1{ background-image: url(img/%EB%9F%B0%EB%8D%98.png); }
+#trip2{ background-image: url(img/%EB%B0%94%EB%A5%B4%EC%85%80%EB%A1%9C%EB%82%98.png);  }
+#trip3{ background-image: url(img/%ED%8C%8C%EB%A6%AC.png);}
+#trip4{    background-image: url(img/%ED%94%84%EB%9D%BC%ED%95%98.png); }
+#trip5{ background-image: url(img/%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84.jpg); }
+#trip6{ background-image: url(img/%EC%82%B0%ED%86%A0%EB%A6%AC%EB%8B%88.jpg); }
+
+
+/*스크롤바 없애는 효과*/
+::-webkit-scrollbar {display:none;}
+
+/*footer*/
+footer {
+    margin: 0; clear:both; 
+    height: 10vh; 
+    background-color: dimgray; font-size: 1em; text-align: center; color: whitesmoke;
 }
-.submenu {
-    color: white;
-    list-style-type: none;
-    font-size: 0.7em;
-}
-button:hover{
-    cursor: pointer;
+footer h4, h5{ margin: 0;}
+footer div{
+    width: 100%;align-content: center; padding: 15px 0;
 }
 

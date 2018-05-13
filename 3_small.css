@@ -9,7 +9,7 @@ html, body, h1{margin: 0;}
 }
 
 #contents{
-    width: 100vw;
+    width: 100%;
 }
 #contents .photo{
     width: 100%;
