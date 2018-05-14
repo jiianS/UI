@@ -6,6 +6,7 @@
 <title> BOARD - DL </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="table.css" />
+   <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 1000px)" href="table_small.css">
 <script src="./main.js"></script>
 
 </head> 
@@ -20,28 +21,28 @@
 			<div class="bbs">
 					<div class="thead">
 
-						<dl>
-							<dt scope="col" class="cel01">번호</dt>
-							<dt scope="col" class="cel02">제목</dt>
-							<dt scope="col" class="cel04">작성일</dt>
-							<dt scope="col" class="cel05">조회수</dt>
-						</dl>
+						<ul>
+							<li scope="col" class="cel01">번호</li>
+							<li scope="col" class="cel02">제목</li>
+							<li scope="col" class="cel04">작성일</li>
+							<li scope="col" class="cel05">조회수</li>
+						</ul>
 					</div>
                        
 					<div class="tbody">
 
-						<dl>
-							<dd scope="row" class="cel01">1</dd>
-							<dd class="cel02"><a href="#">제목</a></dd>
-							<dd class="cel04">2018-05-08</dd>
-							<dd class="cel05">5</dd>
-						</dl>
-						<dl>
-							<dd scope="row" class="cel01">2</dd>
-							<dd class="cel02"><a href="#">게시판 제목</a></dd>
-							<dd class="cel04">2018-05-10</dd>
-							<dd class="cel05">3</dd>
-						</dl>
+						<ul>
+							<li scope="row" class="cel01">1</li>
+							<li class="cel02"><a href="#">제목</a></li>
+							<li class="cel04">2018-05-08</li>
+							<li class="cel05">5</li>
+						</ul>
+						<ul>
+							<li scope="row" class="cel01">2</li>
+							<li class="cel02"><a href="#">게시판 제목</a></li>
+							<li class="cel04">2018-05-10</li>
+							<li class="cel05">3</li>
+						</ul>
 					</div>
 
 					<div class="tfoot"> <!-- 요기 페이지는 숫자 페이징 넣어요 -->

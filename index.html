@@ -4,9 +4,12 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title> 매덩여행 </title>
-   <link rel="stylesheet" type="text/css" href="1_big.css">
-   <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 900px)" href="2_middle.css">
+    
+     <link rel="stylesheet" type="text/css" href="1_big.css">
+   <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 1400px)" href="0.css">
+   <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 1000px)" href="2_middle.css">
     <link rel="stylesheet" type="text/css"  media="only screen and (max-width: 600px)" href="3_small.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./vendor/jquery-1.10.2.min.js"></script>
     <script src="./vendor/jquery-ui-1.10.3.custom.min.js"></script>
@@ -16,9 +19,9 @@
 <body>
  <!--기본에서 header 추가-->
   <header>
-       <div id="main" onclick="location.href='index.html'">
+       <div id="main">
             <div class=logo></div>
-                <h1>매덩여행</h1>
+                <h1 onclick="location.href='index.html'">매덩여행</h1>
             <div id="search"  class="content"></div>
         </div>
         
@@ -39,6 +42,24 @@
 <!--section추가 , pagemain변경-->    
     <section>
         <aside>
+           <!--login section-->    
+           <section id = "login">
+               <h4>로그인</h4>
+                <form onsubmit="eventAction(); return false;">
+                    <input type="text" name ="id" id = "id" value ="" placeholder="아이디를 입력하세요."><br>
+                    <input type="password" name ="pw" id = "pw" value ="" placeholder="비번을 입력하세요."><br>
+                    <input type="submit" value ="로그인" >
+                </form> 
+                
+             </section>
+             
+
+            <section id="user" style="display: none">
+                   <P><h1>사용자 정보</h1></P> 
+                    <p> <span id ="userId"></span>님, 안녕하세요.</p>
+            </section>
+           
+           <hr>
             <ul>
                 <li class="div22">
                     <span class="moreEurope">유럽</span>
@@ -72,7 +93,9 @@
                 </ul>
 
                 
-                <button id="button"><img src="img/btn_open.png"></button>
+        <button id="button"><img src="img/btn_open.png"></button>
+      
+
         </aside>
 
 

@@ -1,39 +1,5 @@
 html,body{ margin: 0; }
 
-/*header - css*/
-header{
-    width: 100%;
-    padding-top: 10px;
-    height: 20vh;
-    background-color: lightpink;
-    text-align: center;
-}
-
-header h1{ display: inline-block; font-size: 3.5em; }
-
-.logo{
-    background-image:url(img/ic_airplanemode_active_black_24px.svg);
-    width: 75px;
-    height: 75px;
-    background-size: cover;
-    transform: translateY(20px);
-    display: inline-block;    
-}
-
-#search{
-    background-size: cover;
-    width: 75px;
-    height: 75px;
-    background-image: url(img/ic_search_black_24px.svg);
-    float: right;    
-    display: inline-block;
-    transform: translateX(-30%) translateY(50%);
-}
-#search:hover{
-    background-color: gainsboro;
-    cursor: pointer;
-}
-
 /* section1<여행지 목록> - css*/
 
 section{ width: 100%; clear: both; }
@@ -59,7 +25,7 @@ section{ width: 100%; clear: both; }
     float: inherit;
     display: inline-block;   
     padding: 5px 10px;    
-    font-size: 15px;
+    
     transform: translateY(80%);    
 }
 
@@ -97,6 +63,3 @@ article{
     width: 450px;
     height: 330px;
 }
-
-    
-        

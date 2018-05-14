@@ -1,24 +1,17 @@
 
 div{text-align: center;}
 /* COMMONS CSS*/
-dl,dt,dd,ul,ol,li{margin:0;padding:0;}
+ul,ol,li{margin:0;padding:0;}
 /* *{margin:0; padding:0;} 위에꺼와 동일 */
 html{overflow-y:scroll;}
 
-html,body{width:100%; height:50%;}
 li{list-style:none;}
 address,em{font-style:normal;}
 a{ text-decoration:none;}
 
 a:hover{color:#000000; text-decoration:underline;}
 .blind{display:block; overflow:hidden; position:absolute; top:-9999em; left:0;}
-.page-main{
-    height: 73vh;
-}
 
-#contents{
-   height: 100%;
-}
 #
 /*
 body,h1,h2,h3,h4,h5,h6,input,textarea,select,option,th,td 글자 크기 안 먹는 거 다 넣어주기
@@ -36,7 +29,8 @@ body{text-align:center;}
     color: grey;
 }
 .container{
-    position: relative;    
+    position: relative;
+    transform: translateY(15vh);
 }
 .container:after{content:''; display:block; clear:both;}
 
@@ -48,24 +42,24 @@ body{text-align:center;}
 .bbs a:hover,a:focus{text-decoration:none;color: blue;text-decoration:underline;}
 
 /* BOARD CELL WIDTH */
-.bbs .cel01{width:5vw;}
-.bbs .cel02{width:35vw;}
-.bbs .cel04{width:20vw;}
-.bbs .cel05{width:10vw;}
+.bbs .cel01{width:10vw;}
+.bbs .cel02{width:25vw;}
+.bbs .cel04{width:10vw;}
+.bbs .cel05{width:5vw;}
 
 
 /* BOARD DETAIL */
 
-.bbs .thead dl:after{content:' '; display: block; clear:both;}
-.bbs .thead dt{float:left; line-height:4vh; color:#363636; font-size:0.9em; font-weight:bold; text-align:center; background:repeat-x 0 100%; border-top:#CC6699 solid 2px;}
+.bbs .thead ul:after{content:' '; display: block; clear:both;}
+.bbs .thead li{float:left; line-height:4vh; color:#363636; font-size:0.9em; font-weight:bold; text-align:center; background:repeat-x 0 100%; border-top:#CC6699 solid 2px;}
 
 
 
-.bbs .tbody dl:after{content:' '; display: block; clear:both;}
-.bbs .tbody dd{float:left; line-height:40px; text-align:center; border-bottom:1px groove #000000 ;}
+.bbs .tbody ul:after{content:' '; display: block; clear:both;}
+.bbs .tbody li{float:left; line-height:40px; text-align:center; border-bottom:1px groove #000000 ;}
 
-.bbs .tbody dd.cel02{/*padding-left:5px;*/ text-align:left;}
-.bbs .tbody dd.cel02 a{margin-left:5px;} /*표에 붙는 글씨간격 띄우기*/
+.bbs .tbody li.cel02{/*padding-left:5px;*/ text-align:left;}
+.bbs .tbody li.cel02 a{margin-left:5px;} /*표에 붙는 글씨간격 띄우기*/
 
 /* 아이콘 이미지 정렬 */
 .iconNotice, .iconFile{display:block; height:40px;}

@@ -2,7 +2,7 @@ $(function(){
     var duration=300; 
     
    // var $aside = $('.page-main > aside'); 를 아래와 같이 변경
-    
+
     var $aside = $('aside');
     var $asidButton= $aside.find('button')
         .on('click',function(){
@@ -19,7 +19,7 @@ $(function(){
                 $asidButton.find('img').attr('src', 'img/btn_open.png');
             };
         });
-
+    
 });
 
 
@@ -53,10 +53,7 @@ $(function(){
             });
      
             $("#table").click(function(){
-                
-                $("#contents").load("table.html");});
-                     
-        
+                $("#contents").load("table.html");});     
         });
 
 
@@ -72,7 +69,7 @@ var span = document.getElementsByClassName("close")[0];
 
 
 // When the user clicks the button, open the modal 
-$('.content').click(function() {
+$('.search_click').click(function() {
     modal.style.display = "block";
     console.log("검색창");
 });
@@ -91,7 +88,17 @@ window.onclick = function(event) {
 };
 });
 
-//게시판
+//로그인
+function eventAction(){
+            document.getElementById("login").style.display="none";    
+            document.getElementById("user").style.display="block";
+            
+            var id = document.getElementById("id").value;
+            var pw = document.getElementById("pw").value;
+            
+            document.getElementById("userId").innerHTML = id;
+          
+        };
 
 
 //클맀했을떄, contents화면 이동
@@ -99,10 +106,12 @@ window.onclick = function(event) {
 
         $("#trip1").click(function(){
           $("#contents").load("london.html");});
-     
-        $("#trip2").click(function(){
-          $("#contents").load("Barcelona.html");});  
-     
+
 });
 
+ $(document).ready(function(){
 
+        $("#trip1").click(function(){
+          $("#contents").load("london.html");});
+
+});
