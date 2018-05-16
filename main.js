@@ -1,3 +1,4 @@
+//사이드_  버튼
 $(function(){ 
     var duration=300; 
     
@@ -106,12 +107,32 @@ function eventAction(){
 
         $("#trip1").click(function(){
           $("#contents").load("london.html");});
-
+     
+         $("#trip2").click(function(){
+          $("#contents").load("Barcelona.html");});
 });
 
- $(document).ready(function(){
+//hash
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $("#nav1 a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-        $("#trip1").click(function(){
-          $("#contents").load("london.html");});
+      // Store hash
+      var hash = this.hash;
 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });

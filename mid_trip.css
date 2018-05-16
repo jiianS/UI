@@ -24,7 +24,8 @@ article{
     width: 100%;
     height: auto;
     font-size: 13px;
-    padding-top: 20px;    
+    padding-top: 20px;
+    text-align: left;
 }
 
 .c_photo{

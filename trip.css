@@ -6,6 +6,11 @@ section{ width: 100%; clear: both; }
 
 #s_title{
     height: auto;
+    position: fixed;
+    clear: both;
+    background-color: white;
+    width: calc(100%-200px);
+    margin: 0;
 }
 
 #s_title h1{ 
@@ -33,6 +38,7 @@ section{ width: 100%; clear: both; }
 
 /* section2<여행지 리스트> - css*/
 #s_content{
+    display: contents;
     font-size:1.3em;    
 }
 
@@ -50,6 +56,7 @@ article{
     font-size: 14px;
     padding: 20px 0;    
     float: left;
+    text-align: left;
 }
  
 .c_photo{
