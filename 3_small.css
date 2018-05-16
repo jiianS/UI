@@ -59,10 +59,14 @@ section aside button {
     padding: 0;
     border: none;
 }
+
 .submenu li{
-     transform: translateX(-50px);
+     transform: translateX(-100px);
 }
 
+.modal {
+    padding-top: 80px; /* Location of the box */
+}
 #login{
     padding-left: 60px;
 }
