@@ -1,14 +1,11 @@
-html,body{ margin: 0; }
 
 /* section1<여행지 목록> - css*/
 
-section{ width: 100%; clear: both; }
-
-.s_title{
+#s_title{
     height: auto;
 }
 
-.s_title h1{ 
+#s_title h1{ 
     font-size: 3em; 
     text-align: center;
     color: grey;
@@ -24,28 +21,13 @@ section{ width: 100%; clear: both; }
 #nav1 a{
     float: inherit;
     display: inline-block;   
-    padding: 5px 10px;
-    transform: translateY(80%);
-    cursor: pointer;
+    padding: 5px 10px;    
+    
+    transform: translateY(80%);    
 }
 
-/*clone
-.s_title-clone{
-    background-color: aliceblue;
-    opacity: 0.9;
-    position: fixed;
-    
-    top: -35px;
-    width: 100%;
-    z-index: 30;
-    
-    
-}
-.s_title-clone.visible{
-    top:0;
-}
+#nav1 a:hover{ cursor: pointer; }
 
-*/
 /* section2<여행지 리스트> - css*/
 #s_content{
     font-size:1.3em;    
